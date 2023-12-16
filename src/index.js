@@ -18,12 +18,12 @@ root.render(
     <BrowserRouter>
     <Header/>
         <Routes>
-            <Route path='/' element={<Sem1 />}/>
-            <Route path='/sem1' element={<Sem1 />}></Route>
-            <Route path='/sem2' element={<Sem2 />}></Route>
-            <Route path='/sem3' element={<Sem3 />}></Route>
-            <Route path='/sem4' element={<Sem4 />}></Route>
-            <Route path='/overall' element={<App />}></Route>
+            <Route path='gpa_calculator/' element={<Sem1 />}/>
+            <Route path='gpa_calculator/sem1' element={<Sem1 />}></Route>
+            <Route path='gpa_calculator/sem2' element={<Sem2 />}></Route>
+            <Route path='gpa_calculator/sem3' element={<Sem3 />}></Route>
+            <Route path='gpa_calculator/sem4' element={<Sem4 />}></Route>
+            <Route path='gpa_calculator/overall' element={<App />}></Route>
         </Routes>
     <Footer/>
     </BrowserRouter>
