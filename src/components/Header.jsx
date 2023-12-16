@@ -5,7 +5,7 @@ import logo from '../img/logo.png';
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#306991' }}>
-      <NavLink className="navbar-brand mx-5" to="/">
+      <NavLink className="navbar-brand mx-5" to="gpa_calculator/">
         <img src={logo} width={50} style={{ backgroundColor: 'white' }} alt="Logo" />
         <span style={{ marginLeft: '20px', fontWeight: 'bold', fontSize: '25px', color: 'white' }}>HNDIT GPA Calculator</span>
       </NavLink>
