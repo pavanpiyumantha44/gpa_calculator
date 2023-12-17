@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gpa_calculator/static/css/main.f96f07a4.css",
-    "main.js": "/gpa_calculator/static/js/main.eb91e7bf.js",
+    "main.js": "/gpa_calculator/static/js/main.5cbe5675.js",
     "static/media/logo.png": "/gpa_calculator/static/media/logo.3c97ee285bf2f1e45dab.png",
     "index.html": "/gpa_calculator/index.html",
     "main.f96f07a4.css.map": "/gpa_calculator/static/css/main.f96f07a4.css.map",
-    "main.eb91e7bf.js.map": "/gpa_calculator/static/js/main.eb91e7bf.js.map"
+    "main.5cbe5675.js.map": "/gpa_calculator/static/js/main.5cbe5675.js.map"
   },
   "entrypoints": [
     "static/css/main.f96f07a4.css",
-    "static/js/main.eb91e7bf.js"
+    "static/js/main.5cbe5675.js"
   ]
 }
