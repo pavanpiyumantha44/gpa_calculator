@@ -68,26 +68,26 @@ const Sem1 = () => {
         }
       }
   return (
-    <div>
-      <div className='container'>
-        <div className='row mt-3'>
-            <div className='col-2'></div>
-            <div className='col-8 text-center p-3 shadow'>
-                  <div>
-                  <form onSubmit={handleSem1GPA}>
-                    <div className='card'>
-                      <div className='card-header'><h2 className='text-center '>Semester I</h2></div>
-                      <div className='card-body'>
-                        <table className='table'>
-                          <thead>
-                            <tr>
-                              <th>Subject Code</th>
-                              <th>Subject</th>
-                              <th>Credit</th>
-                              <th>Result</th>
-                            </tr>
-                          </thead>
-                          <tbody>
+    <div className='container'>
+    <div className='row mt-3'>
+      <div className='col-md-2'></div>
+      <div className='col-md-8 col-sm-12 text-center p-3 shadow'>
+        <div>
+          <form onSubmit={handleSem1GPA}>
+            <div className='card'>
+              <div className='card-header'><h2 className='text-center'>Semester I</h2></div>
+              <div className='card-body'>
+                <div className='table-responsive'>
+                  <table className='table'>
+                    <thead>
+                      <tr>
+                        <th>Subject Code</th>
+                        <th>Subject</th>
+                        <th>Credit</th>
+                        <th>Result</th>
+                      </tr>
+                    </thead>
+                    <tbody>
                             <tr>
                               <td>HNDIT1101</td>
                               <td>Personal Computer Applications</td>
@@ -240,30 +240,28 @@ const Sem1 = () => {
                                 </select>
                               </td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div className='card-footer'>
-                        <div className='row'>
-                          <div className='col-8'>
-                            <button type='submit' className='btn btn-success w-50'>Calculate</button>
-                          </div>
-                          <div className='col-4'>
-                            <h3 className='fw-1'>{sem1TotGPACredits} GPA</h3>
-                          </div>
-                        </div>
-                       
-                      </div>
-                    </div>
-                    </form>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div className='card-footer'>
+                <div className='row align-items-center'>
+                  <div className='col-8'>
+                    <button type='submit' className='btn btn-success w-100'>Calculate</button>
                   </div>
+                  <div className='col-4'>
+                    <h3 className='fw-1'>{sem1TotGPACredits} GPA</h3>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className='col-2'>
-
-            </div>
+          </form>
         </div>
       </div>
+      <div className='col-md-2'></div>
     </div>
+  </div>
+  
   )
 }
 

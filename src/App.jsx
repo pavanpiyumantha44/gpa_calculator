@@ -97,14 +97,13 @@ const App = () => {
     
   },[display])
   return (
-    <div>
-      <div className='container'>
-        <div className='row mt-3'>
-          <div className='col-2'></div>
-            <div className='col-8 text-center p-3 shadow'>
-                  <div>
-                    <form onSubmit={handleTotalGPA}>
-                      <div className='card'>
+    <div className='container'>
+      <div className='row mt-3'>
+      <div className='col-md-2'></div>
+      <div className='col-md-8 col-sm-12 text-center p-3 shadow'>
+        <div>
+          <form onSubmit={handleTotalGPA}>
+            <div className='card'>
                         <div className='card-header'><h2 className='text-center '>Semester I</h2></div>
                         <div className='card-body'>
                           <table className='table'>
@@ -272,8 +271,8 @@ const App = () => {
                             </tbody>
                           </table>
                         </div>
-                      </div>
-                      <div className='card'>
+            </div>
+            <div className='card'>
                         <div className='card-header'><h2 className='text-center '>Semester II</h2></div>
                         <div className='card-body'>
                           <table className='table'>
@@ -442,8 +441,8 @@ const App = () => {
                             </tbody>
                           </table>
                         </div>
-                      </div>
-                      <div className='card'>
+            </div>
+            <div className='card'>
                         <div className='card-header'><h2 className='text-center '>Semester III</h2></div>
                         <div className='card-body'>
                           <table className='table'>
@@ -611,8 +610,8 @@ const App = () => {
                             </tbody>
                           </table>
                         </div>
-                      </div>
-                      <div className='card'>
+            </div>
+            <div className='card'>
                         <div className='card-header'><h2 className='text-center '>Semester IV</h2></div>
                         <div className='card-body'>
                           <table className='table'>
@@ -792,13 +791,12 @@ const App = () => {
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </form>
-                  </div>
-          </div>
-          <div className='col-2'></div>
+            </div>
+          </form>
         </div>
-      </div>
+        </div>
+        <div className='col-2'></div>
+        </div>
     </div>
   )
 }

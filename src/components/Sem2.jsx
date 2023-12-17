@@ -69,202 +69,284 @@ const Sem2 = () => {
         }
       }
   return (
-    <div>
-      <div className='container'>
-        <div className='row mt-3'>
-            <div className='col-2'></div>
-            <div className='col-8 text-center p-3 shadow'>
-                  <div>
-                  <form onSubmit={handleSem2GPA}>
-                    <div className='card'>
-                      <div className='card-header'><h2 className='text-center '>Semester II</h2></div>
-                      <div className='card-body'>
-                        <table className='table'>
-                          <thead>
-                            <tr>
-                              <th>Subject Code</th>
-                              <th>Subject</th>
-                              <th>Credit</th>
-                              <th>Result</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>HNDIT1209</td>
-                              <td>Object Oriented Programming</td>
-                              <td>4</td>
-                              <td>
-                                <select className='form-select' onChange={e=> setSem2({...sem2,HNDIT1209:(parseFloat(e.target.value)*4)})}>
-                                  <option disabled selected>__Select__</option>
-                                  <option value={4}>A+</option>
-                                  <option value={4}>A</option>
-                                  <option value={3.7}>A-</option>
-                                  <option value={3.3}>B+</option>
-                                  <option value={3}>B</option>
-                                  <option value={2.7}>B-</option>
-                                  <option value={2.3}>C+</option>
-                                  <option value={2}>C</option>
-                                  <option value={1.7}>C-</option>
-                                </select>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>HNDIT1210</td>
-                              <td>Graphics and Multimedia</td>
-                              <td>3</td>
-                              <td>
-                                <select className='form-select' onChange={e=> setSem2({...sem2,HNDIT1210:(parseFloat(e.target.value)*3)})}>
-                                  <option disabled selected>__Select__</option>
-                                  <option value={4}>A+</option>
-                                  <option value={4}>A</option>
-                                  <option value={3.7}>A-</option>
-                                  <option value={3.3}>B+</option>
-                                  <option value={3}>B</option>
-                                  <option value={2.7}>B-</option>
-                                  <option value={2.3}>C+</option>
-                                  <option value={2}>C</option>
-                                  <option value={1.7}>C-</option>
-                                </select>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>HNDIT1211</td>
-                              <td>Data Structures and Algorithms</td>
-                              <td>2</td>
-                              <td>
-                                <select className='form-select' onChange={e=> setSem2({...sem2,HNDIT1211:(parseFloat(e.target.value)*2)})}>
-                                  <option disabled selected>__Select__</option>
-                                  <option value={4}>A+</option>
-                                  <option value={4}>A</option>
-                                  <option value={3.7}>A-</option>
-                                  <option value={3.3}>B+</option>
-                                  <option value={3}>B</option>
-                                  <option value={2.7}>B-</option>
-                                  <option value={2.3}>C+</option>
-                                  <option value={2}>C</option>
-                                  <option value={1.7}>C-</option>
-                                </select>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>HNDIT1212</td>
-                              <td>Systems Analysis and Design</td>
-                              <td>2</td>
-                              <td>
-                                <select className='form-select' onChange={e=> setSem2({...sem2,HNDIT1212:(parseFloat(e.target.value)*2)})}>
-                                  <option disabled selected>__Select__</option>
-                                  <option value={4}>A+</option>
-                                  <option value={4}>A</option>
-                                  <option value={3.7}>A-</option>
-                                  <option value={3.3}>B+</option>
-                                  <option value={3}>B</option>
-                                  <option value={2.7}>B-</option>
-                                  <option value={2.3}>C+</option>
-                                  <option value={2}>C</option>
-                                  <option value={1.7}>C-</option>
-                                </select>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>HNDIT1213</td>
-                              <td>Data Communications and Networks</td>
-                              <td>3</td>
-                              <td>
-                                <select className='form-select' onChange={e=> setSem2({...sem2,HNDIT1213:(parseFloat(e.target.value)*3)})}>
-                                  <option disabled selected>__Select__</option>
-                                  <option value={4}>A+</option>
-                                  <option value={4}>A</option>
-                                  <option value={3.7}>A-</option>
-                                  <option value={3.3}>B+</option>
-                                  <option value={3}>B</option>
-                                  <option value={2.7}>B-</option>
-                                  <option value={2.3}>C+</option>
-                                  <option value={2}>C</option>
-                                  <option value={1.7}>C-</option>
-                                </select>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>HNDIT1214</td>
-                              <td>Statistics for IT</td>
-                              <td>2</td>
-                              <td>
-                                <select className='form-select' onChange={e=> setSem2({...sem2,HNDIT1214:(parseFloat(e.target.value)*2)})}>
-                                  <option disabled selected>__Select__</option>
-                                  <option value={4}>A+</option>
-                                  <option value={4}>A</option>
-                                  <option value={3.7}>A-</option>
-                                  <option value={3.3}>B+</option>
-                                  <option value={3}>B</option>
-                                  <option value={2.7}>B-</option>
-                                  <option value={2.3}>C+</option>
-                                  <option value={2}>C</option>
-                                  <option value={1.7}>C-</option>
-                                </select>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>HNDIT1215</td>
-                              <td>English for Technology II</td>
-                              <td>2</td>
-                              <td>
-                                <select className='form-select' onChange={e=> setSem2({...sem2,HNDIT1215:(parseFloat(e.target.value)*2)})}>
-                                  <option disabled selected>__Select__</option>
-                                  <option value={4}>A+</option>
-                                  <option value={4}>A</option>
-                                  <option value={3.7}>A-</option>
-                                  <option value={3.3}>B+</option>
-                                  <option value={3}>B</option>
-                                  <option value={2.7}>B-</option>
-                                  <option value={2.3}>C+</option>
-                                  <option value={2}>C</option>
-                                  <option value={1.7}>C-</option>
-                                </select>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>HNDIT1216</td>
-                              <td>Human Values and Professional Ethics</td>
-                              <td>2</td>
-                              <td>
-                                <select className='form-select' onChange={e=> setSem2({...sem2,HNDIT1216:(parseFloat(e.target.value)*2)})}>
-                                  <option disabled selected>__Select__</option>
-                                  <option value={4}>A+</option>
-                                  <option value={4}>A</option>
-                                  <option value={3.7}>A-</option>
-                                  <option value={3.3}>B+</option>
-                                  <option value={3}>B</option>
-                                  <option value={2.7}>B-</option>
-                                  <option value={2.3}>C+</option>
-                                  <option value={2}>C</option>
-                                  <option value={1.7}>C-</option>
-                                </select>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div className='card-footer'>
-                        <div className='row'>
-                          <div className='col-8'>
-                            <button type='submit' className='btn btn-success w-50'>Calculate</button>
-                          </div>
-                          <div className='col-4'>
-                            <h3 className='fw-1'>{sem2TotGPACredits} GPA</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </form>
+    <div className="container">
+      <div className="row mt-3">
+        <div className="col-md-2"></div>
+        <div className="col-md-8 col-sm-12 text-center p-3 shadow">
+          <div>
+            <form onSubmit={handleSem2GPA}>
+              <div className="card">
+                <div className="card-header">
+                  <h2 className="text-center">Semester II</h2>
+                </div>
+                <div className="card-body">
+                  <div className="table-responsive">
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th>Subject Code</th>
+                          <th>Subject</th>
+                          <th>Credit</th>
+                          <th>Result</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>HNDIT1209</td>
+                          <td>Object Oriented Programming</td>
+                          <td>4</td>
+                          <td>
+                            <select
+                              className="form-select"
+                              onChange={(e) =>
+                                setSem2({
+                                  ...sem2,
+                                  HNDIT1209: parseFloat(e.target.value) * 4,
+                                })
+                              }
+                            >
+                              <option disabled selected>
+                                __Select__
+                              </option>
+                              <option value={4}>A+</option>
+                              <option value={4}>A</option>
+                              <option value={3.7}>A-</option>
+                              <option value={3.3}>B+</option>
+                              <option value={3}>B</option>
+                              <option value={2.7}>B-</option>
+                              <option value={2.3}>C+</option>
+                              <option value={2}>C</option>
+                              <option value={1.7}>C-</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>HNDIT1210</td>
+                          <td>Graphics and Multimedia</td>
+                          <td>3</td>
+                          <td>
+                            <select
+                              className="form-select"
+                              onChange={(e) =>
+                                setSem2({
+                                  ...sem2,
+                                  HNDIT1210: parseFloat(e.target.value) * 3,
+                                })
+                              }
+                            >
+                              <option disabled selected>
+                                __Select__
+                              </option>
+                              <option value={4}>A+</option>
+                              <option value={4}>A</option>
+                              <option value={3.7}>A-</option>
+                              <option value={3.3}>B+</option>
+                              <option value={3}>B</option>
+                              <option value={2.7}>B-</option>
+                              <option value={2.3}>C+</option>
+                              <option value={2}>C</option>
+                              <option value={1.7}>C-</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>HNDIT1211</td>
+                          <td>Data Structures and Algorithms</td>
+                          <td>2</td>
+                          <td>
+                            <select
+                              className="form-select"
+                              onChange={(e) =>
+                                setSem2({
+                                  ...sem2,
+                                  HNDIT1211: parseFloat(e.target.value) * 2,
+                                })
+                              }
+                            >
+                              <option disabled selected>
+                                __Select__
+                              </option>
+                              <option value={4}>A+</option>
+                              <option value={4}>A</option>
+                              <option value={3.7}>A-</option>
+                              <option value={3.3}>B+</option>
+                              <option value={3}>B</option>
+                              <option value={2.7}>B-</option>
+                              <option value={2.3}>C+</option>
+                              <option value={2}>C</option>
+                              <option value={1.7}>C-</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>HNDIT1212</td>
+                          <td>Systems Analysis and Design</td>
+                          <td>2</td>
+                          <td>
+                            <select
+                              className="form-select"
+                              onChange={(e) =>
+                                setSem2({
+                                  ...sem2,
+                                  HNDIT1212: parseFloat(e.target.value) * 2,
+                                })
+                              }
+                            >
+                              <option disabled selected>
+                                __Select__
+                              </option>
+                              <option value={4}>A+</option>
+                              <option value={4}>A</option>
+                              <option value={3.7}>A-</option>
+                              <option value={3.3}>B+</option>
+                              <option value={3}>B</option>
+                              <option value={2.7}>B-</option>
+                              <option value={2.3}>C+</option>
+                              <option value={2}>C</option>
+                              <option value={1.7}>C-</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>HNDIT1213</td>
+                          <td>Data Communications and Networks</td>
+                          <td>3</td>
+                          <td>
+                            <select
+                              className="form-select"
+                              onChange={(e) =>
+                                setSem2({
+                                  ...sem2,
+                                  HNDIT1213: parseFloat(e.target.value) * 3,
+                                })
+                              }
+                            >
+                              <option disabled selected>
+                                __Select__
+                              </option>
+                              <option value={4}>A+</option>
+                              <option value={4}>A</option>
+                              <option value={3.7}>A-</option>
+                              <option value={3.3}>B+</option>
+                              <option value={3}>B</option>
+                              <option value={2.7}>B-</option>
+                              <option value={2.3}>C+</option>
+                              <option value={2}>C</option>
+                              <option value={1.7}>C-</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>HNDIT1214</td>
+                          <td>Statistics for IT</td>
+                          <td>2</td>
+                          <td>
+                            <select
+                              className="form-select"
+                              onChange={(e) =>
+                                setSem2({
+                                  ...sem2,
+                                  HNDIT1214: parseFloat(e.target.value) * 2,
+                                })
+                              }
+                            >
+                              <option disabled selected>
+                                __Select__
+                              </option>
+                              <option value={4}>A+</option>
+                              <option value={4}>A</option>
+                              <option value={3.7}>A-</option>
+                              <option value={3.3}>B+</option>
+                              <option value={3}>B</option>
+                              <option value={2.7}>B-</option>
+                              <option value={2.3}>C+</option>
+                              <option value={2}>C</option>
+                              <option value={1.7}>C-</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>HNDIT1215</td>
+                          <td>English for Technology II</td>
+                          <td>2</td>
+                          <td>
+                            <select
+                              className="form-select"
+                              onChange={(e) =>
+                                setSem2({
+                                  ...sem2,
+                                  HNDIT1215: parseFloat(e.target.value) * 2,
+                                })
+                              }
+                            >
+                              <option disabled selected>
+                                __Select__
+                              </option>
+                              <option value={4}>A+</option>
+                              <option value={4}>A</option>
+                              <option value={3.7}>A-</option>
+                              <option value={3.3}>B+</option>
+                              <option value={3}>B</option>
+                              <option value={2.7}>B-</option>
+                              <option value={2.3}>C+</option>
+                              <option value={2}>C</option>
+                              <option value={1.7}>C-</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>HNDIT1216</td>
+                          <td>Human Values and Professional Ethics</td>
+                          <td>2</td>
+                          <td>
+                            <select
+                              className="form-select"
+                              onChange={(e) =>
+                                setSem2({
+                                  ...sem2,
+                                  HNDIT1216: parseFloat(e.target.value) * 2,
+                                })
+                              }
+                            >
+                              <option disabled selected>
+                                __Select__
+                              </option>
+                              <option value={4}>A+</option>
+                              <option value={4}>A</option>
+                              <option value={3.7}>A-</option>
+                              <option value={3.3}>B+</option>
+                              <option value={3}>B</option>
+                              <option value={2.7}>B-</option>
+                              <option value={2.3}>C+</option>
+                              <option value={2}>C</option>
+                              <option value={1.7}>C-</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-            </div>
-            <div className='col-2'>
-
-            </div>
+                </div>
+                <div className="card-footer">
+                  <div className="row align-items-center">
+                    <div className="col-8">
+                      <button type="submit" className="btn btn-success w-100">
+                        Calculate
+                      </button>
+                    </div>
+                    <div className="col-4">
+                      <h3 className="fw-1">{sem2TotGPACredits} GPA</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+        <div className="col-md-2"></div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Sem2

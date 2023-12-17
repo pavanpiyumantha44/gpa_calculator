@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import '../node_modules/react-bootstrap/dist/react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.js'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Sem1 from './components/Sem1';
@@ -18,7 +19,7 @@ root.render(
     <BrowserRouter>
     <Header/>
         <Routes>
-            <Route path='gpa_calculator/' element={<Sem1 />}/>
+            <Route path='gpa_calculator/' element={<App />}/>
             <Route path='gpa_calculator/sem1' element={<Sem1 />}></Route>
             <Route path='gpa_calculator/sem2' element={<Sem2 />}></Route>
             <Route path='gpa_calculator/sem3' element={<Sem3 />}></Route>
