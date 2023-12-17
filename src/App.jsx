@@ -106,6 +106,7 @@ const App = () => {
             <div className='card'>
                         <div className='card-header'><h2 className='text-center '>Semester I</h2></div>
                         <div className='card-body'>
+                        <div className='table-responsive'>
                           <table className='table'>
                             <thead>
                               <tr>
@@ -271,10 +272,12 @@ const App = () => {
                             </tbody>
                           </table>
                         </div>
+                        </div>
             </div>
             <div className='card'>
                         <div className='card-header'><h2 className='text-center '>Semester II</h2></div>
                         <div className='card-body'>
+                        <div className='table-responsive'>
                           <table className='table'>
                             <thead>
                               <tr>
@@ -441,10 +444,12 @@ const App = () => {
                             </tbody>
                           </table>
                         </div>
+                        </div>
             </div>
             <div className='card'>
                         <div className='card-header'><h2 className='text-center '>Semester III</h2></div>
                         <div className='card-body'>
+                        <div className='table-responsive'>
                           <table className='table'>
                             <thead>
                               <tr>
@@ -610,10 +615,12 @@ const App = () => {
                             </tbody>
                           </table>
                         </div>
+                        </div>
             </div>
             <div className='card'>
                         <div className='card-header'><h2 className='text-center '>Semester IV</h2></div>
                         <div className='card-body'>
+                        <div className='table-responsive'>
                           <table className='table'>
                             <thead>
                               <tr>
@@ -778,6 +785,7 @@ const App = () => {
                               </tr>
                             </tbody>
                           </table>
+                        </div>
                         </div>
                         <div className='card-footer'>
                           <div className='row'>
